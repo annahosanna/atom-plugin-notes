@@ -1,0 +1,26 @@
+{
+  "name": "highlight-bad-chars",
+  "main": "./lib/highlight-bad-chars",
+  "version": "2.0.0",
+  "description": "Highlight Unicode characters that can cause issues in source code.",
+  "keywords": [
+    "highlight",
+    "unicode",
+    "invisible characters",
+    "confusables"
+  ],
+  "repository": "https://github.com/ohanhi/atom-highlight-bad-chars",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "prettier": "^1.15.3",
+    "prettier-check": "^2.0.0"
+  },
+  "scripts": {
+    "test": "npx prettier-check \"{lib,spec,styles}/*.{js,less}\"",
+    "format": "npx prettier --write \"{lib,spec,styles}/*.{js,less}\""
+  }
+}
